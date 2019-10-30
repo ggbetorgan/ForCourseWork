@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\Kursovick\\Kursovaya\\Kursovaya.csproj": {}
+    "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\ForCourseWork\\Kursovaya.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\Kursovick\\Kursovaya\\Kursovaya.csproj": {
+    "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\ForCourseWork\\Kursovaya.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\Kursovick\\Kursovaya\\Kursovaya.csproj",
+        "projectUniqueName": "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\ForCourseWork\\Kursovaya.csproj",
         "projectName": "Kursovaya",
-        "projectPath": "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\Kursovick\\Kursovaya\\Kursovaya.csproj",
+        "projectPath": "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\ForCourseWork\\Kursovaya.csproj",
         "packagesPath": "C:\\Users\\FreakIris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\Kursovick\\Kursovaya\\obj\\",
+        "outputPath": "C:\\Users\\FreakIris\\source\\repos\\ggbetorgan\\ForCourseWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
