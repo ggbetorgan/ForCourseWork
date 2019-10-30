@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Kursovaya.Models;
 
 namespace Kursovaya.Controllers
 {
@@ -80,6 +81,15 @@ namespace Kursovaya.Controllers
                 return Content(RegisterFormData);
             }
 
+        }
+
+        public string RerurnCost(CostBike CostBike)
+        {
+            if (CostBike.l > 0 & CostBike.l < 4 & CostBike.m > 10 & CostBike.m < 30 )
+            {
+                return $"Цена велосипеда бренда {CostBike.l} c колесами диаметра {CostBike.m} дюйма(ов) будет {CostBike.GetCost()}";
+            }
+            else return "Параметры введены неверно";
         }
     }
 }
