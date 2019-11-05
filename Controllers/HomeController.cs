@@ -10,6 +10,11 @@ namespace Kursovaya.Controllers
 {
     public class HomeController : Controller
     {
+        private BrandContext BDB;
+        public HomeController(BrandContext context)
+        {
+            BDB = context;
+        }
         public IActionResult Index()
         {
             return View();
@@ -28,6 +33,13 @@ namespace Kursovaya.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(BikeBrandsDB Brand)
+        {
+            BDB.Brands.Add(Brand);
+            await BDB.SaveChangesAsync();
+            return RedirectToAction("Index");
         }
     }
 }

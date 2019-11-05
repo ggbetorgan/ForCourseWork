@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Lab3";
+}
+
+<h1>Lab3</h1>
+
+<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Компания</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Country" class="control-label">Страна</label>
+        <input type="text" asp-for="Country" class="form-control" />
+    </div>
+</form>
+

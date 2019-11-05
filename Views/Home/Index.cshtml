@@ -5,3 +5,12 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<a asp-action="Create">Добавить компания</a>
+<table class="table">
+    <tr><td>Компания</td><td>Страна</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.Name</td><td>@item.Country</td></tr>
+    }
+</table>
+
