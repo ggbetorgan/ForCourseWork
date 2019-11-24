@@ -60,3 +60,4 @@ C:\Users\FreakIris\source\repos\ggbetorgan\ForCourseWork\obj\Debug\netcoreapp2.2
 C:\Users\FreakIris\source\repos\ggbetorgan\ForCourseWork\obj\Debug\netcoreapp2.2\Kursovaya.dll
 C:\Users\FreakIris\source\repos\ggbetorgan\ForCourseWork\obj\Debug\netcoreapp2.2\Kursovaya.pdb
 C:\Users\FreakIris\source\repos\ggbetorgan\ForCourseWork\obj\Debug\netcoreapp2.2\Kursovaya.csproj.CopyComplete
+C:\Users\FreakIris\source\repos\ggbetorgan\ForCourseWork\obj\Debug\netcoreapp2.2\Razor\Views\Home\Lab3.g.cshtml.cs
