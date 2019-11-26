@@ -10,6 +10,15 @@ namespace Kursovaya.Controllers
 {
     public class HomeController : Controller
     {
+        private BikeCentreContext BCC;
+
+        public HomeController(BikeCentreContext context)
+        {
+            BCC = context;
+        }
+
+
+
         public IActionResult Index()
         {
             return View();
