@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Kursovaya.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kursovaya.Controllers
 {
@@ -17,7 +18,11 @@ namespace Kursovaya.Controllers
             BCC = context;
         }
 
-
+        //public async Task<IActionResult> Shop()
+        //{
+        //    return View(await BCC.BrandsDBs.ToListAsync());
+        //}
+        //db.Knifes.ToListAsync()
 
         public IActionResult Index()
         {

@@ -1,22 +1,23 @@
-﻿    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<Kursovaya.Models.BrandsDB>
+  ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
 </div>
 
-@*<table class="table">
-    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<table class="table">
+    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
     @foreach (var item in Model)
     {
-        <tr><td>item</td></tr>
+        <tr><td>item.BrandName</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
     }
-</table>*@
+</table>
 
-<div class="page-banner text-center">
-    <h1>Product Details</h1>
-    <ul class="page-breadcrumb">
-        <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a></li>
-        <li>Product Details</li>
-    </ul>
-</div>
+@*<div class="page-banner text-center">
+        <h1>Product Details</h1>
+        <ul class="page-breadcrumb">
+            <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a></li>
+            <li>Product Details</li>
+        </ul>
+    </div>*@
