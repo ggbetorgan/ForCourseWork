@@ -1,23 +1,35 @@
-﻿@model IEnumerable<Kursovaya.Models.BrandsDB>
-  ViewData["Title"] = "Home Page";
-}
-
+﻿
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Производители велосипедов и их комплектующих</h1>
 </div>
 
 <table class="table">
-    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
-    @foreach (var item in Model)
+    <tr><td>Название</td><td>Сайт производителя</td><td>Страна производителя</td></tr>
+    @foreach (var item1 in  ViewBag.BrandsDB)
     {
-        <tr><td>item.BrandName</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+        <tr><td>@item1.BrandName</td><td>@item1.SiteBrand</td><td>@item1.CountryBrand</td></tr>
     }
+
 </table>
 
-@*<div class="page-banner text-center">
-        <h1>Product Details</h1>
-        <ul class="page-breadcrumb">
-            <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a></li>
-            <li>Product Details</li>
-        </ul>
-    </div>*@
+<div class="text-center">
+    <h1 class="display-4">Предназначены для :</h1>
+</div>
+
+<table class="table">
+    <tr><td>Название</td></tr>
+    @foreach (var item2 in ViewBag.GenderDB)
+    {
+        <tr><td>@item2.NameGender</td></tr>
+    }
+
+</table>
+@*<table class="table">
+    <tr><td>Название</td></tr>
+    @foreach (var item3 in ViewBag.BrakesDB)
+    {
+        <tr><td>@item3.BrakesDB</td></tr>
+    }
+
+</table>*@
+

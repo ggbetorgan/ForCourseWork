@@ -10,9 +10,11 @@ namespace Kursovaya.Models
     {
         [Key]
         public int ID_Brakes { get; set; }
+
         public int Brand_ID { get; set; }
         public int TypeBrake_ID { get; set; }
         public string ModelBrake { get; set; }
         public string CommentToBrake { get; set; }
+
     }
 }

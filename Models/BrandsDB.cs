@@ -14,5 +14,6 @@ namespace Kursovaya.Models
         public string SiteBrand { get; set; }
         public string CountryBrand { get; set; }
 
+
     }
 }

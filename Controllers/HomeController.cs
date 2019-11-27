@@ -18,16 +18,19 @@ namespace Kursovaya.Controllers
             BCC = context;
         }
 
-        //public async Task<IActionResult> Shop()
-        //{
-        //    return View(await BCC.BrandsDBs.ToListAsync());
-        //}
-        //db.Knifes.ToListAsync()
-
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            ViewBag.GenderDB = await BCC.GenderDB.ToListAsync();
+            ViewBag.BrandsDB = await BCC.BrandsDB.ToListAsync();
+            //ViewBag.BrakesDB = await BCC.BrakesDB.ToListAsync();
             return View();
         }
+        //db.Knifes.ToListAsync()
+
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
         public IActionResult LabView()
         {
             return View();

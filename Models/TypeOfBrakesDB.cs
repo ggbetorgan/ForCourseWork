@@ -12,5 +12,8 @@ namespace Kursovaya.Models
         public int ID_TypeOfBrake { get; set; }
         public string TypeBrakesName { get; set; }
         public string TypeBrakesComment { get; set; }
+
+        public List<BrakesDB> BrakesDB { get; set; }
+
     }
 }
